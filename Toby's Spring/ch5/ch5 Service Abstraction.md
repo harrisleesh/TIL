@@ -194,7 +194,7 @@ public void upgradeLevel(User user) {
 
 ### 결과
 
-![ch5%20Service%20Abstraction/Untitled.png](ch5%20Service%20Abstraction%201e28089e292d45de90e2bec690e27988/Untitled.png)
+![ch5%20Service%20Abstraction/Untitled.png](ch5%20Service%20Abstraction/Untitled.png)
 
 ### 테스트 실패의 원인
 

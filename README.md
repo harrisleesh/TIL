@@ -16,6 +16,7 @@
 - Spring mvc
 - Spring Security
 - Spring data jpa
+- QueryDSL
 ## TOBY'S SPRING
 Ch6 AOP
 ## Web

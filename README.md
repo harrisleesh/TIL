@@ -8,6 +8,7 @@
 ## Algorithm
 ## AWS
 ## DataBase
+- DB Sharding
 ## DataStructure
 ## Java
 ## Network

@@ -6,7 +6,7 @@
 - 화이팅!!!
 
 ## Algorithm
-- 
+- sort
 ## AWS
 ## DataBase
 - DB Sharding

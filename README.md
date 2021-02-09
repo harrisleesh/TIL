@@ -7,6 +7,7 @@
 
 ## Algorithm
 - sort
+- hash
 ## AWS
 ## DataBase
 - DB Sharding

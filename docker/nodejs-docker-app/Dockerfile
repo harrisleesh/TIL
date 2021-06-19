@@ -1,6 +1,9 @@
 # Define baseImage 
 FROM node:10
 
+# working directory
+WORKDIR /usr/src/app
+
 # Copy package.json
 COPY ./ ./
 

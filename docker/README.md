@@ -3,9 +3,10 @@
 - What is Docker?
 - What is Container?
 - Docker Commands
-test stackedit.io
+
 # Docker
-## Docker
+## Docker란?
+
 
 ## Docker image
 도커 이미지란 도커 컨테이너를 만들기 위해 필요한 속성이나 종속성들을 포함한 소프트웨어 패키지이다.
@@ -34,5 +35,5 @@ test stackedit.io
 - 도커 이미지는 여러개의 이미지 레이어로 구성된다.
 - 베이스 이미지는 이미지의 기반이 되는 이미지이다.(Os라고 생각하면 될듯)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTE4ODQyMDFdfQ==
+eyJoaXN0b3J5IjpbLTEwMzY4NzA0MF19
 -->

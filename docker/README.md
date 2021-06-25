@@ -30,6 +30,7 @@
 
 
 ## 도커 client-server 구조
+
 ## 도커 이미지, Dockerfile
 
 ## Dockerfile 만들기
@@ -50,5 +51,5 @@
 - 도커 이미지는 여러개의 이미지 레이어로 구성된다.
 - 베이스 이미지는 이미지의 기반이 되는 이미지이다.(Os라고 생각하면 될듯)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzY3OTM5Ml19
+eyJoaXN0b3J5IjpbMjA1Nzc3NzUyMiwxNjAzNjc5MzkyXX0=
 -->

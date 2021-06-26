@@ -31,7 +31,7 @@
 
 ## 도커 client-server 구조
 
-
+ 
 ## 도커 이미지, Dockerfile
 
 ## Dockerfile 만들기
@@ -159,6 +159,6 @@ Docker is written in the  [Go programming language](https://golang.org/)  and ta
 
 These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MD
-M2NzkzOTJdfQ==
+eyJoaXN0b3J5IjpbMTQzMjI1Nzc0OSwtMTkyODkyNjY5MywzNT
+k0MTYyNjAsMTYwMzY3OTM5Ml19
 -->

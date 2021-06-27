@@ -19,10 +19,10 @@
 ### 도커 컨테이너
 - 특징
 -- 도커 컨테이너는 가상화된 공간을 생성하기 위해 리눅스의 자체 기능인 chroot, 네임스페이스(namespace), cgroup을 사용하여 프로세스 단위의 격리 환경을 만들어줌 
--- 컨테이너에서 필요한 커널을 호스트의 커널과 공유하여 사용하고, 컨테이너 안에는 애플리케이션을 구동하는 데 필요한 라이브러리, 실행파일만 존재하기 때문에 이미지 크기가 상대적으로 작음
+-- 컨테이너에서 필요한 커널을 호스트의 커널과 공유하여 사용하고, 컨테이너 안에는 애플리케이션을 구동하는 데 필요한 라이브러리, 실행파일만 존재한다.
 - 장점
 -- 성능 손실이 거의 없음
-
+-- 이미지 크기가 작음
 
 # Docker Architecture
 ## 도커 client-server 구조
@@ -76,8 +76,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA5OTI4MzE1LC0xMDk4MDI2NTUzLC04Mz
-QwOTAyMDEsLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMTAwMjE0
-NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODkyNjY5My
-wzNTk0MTYyNjAsMTYwMzY3OTM5Ml19
+eyJoaXN0b3J5IjpbLTU2Mjk4NDIxNywtMTA5ODAyNjU1MywtOD
+M0MDkwMjAxLC0xODM1NjYyODA0LC0xNTUxMjA3MzksLTEwMDIx
+NDY0OTgsMTE0Nzk5ODM2LDE0MzIyNTc3NDksLTE5Mjg5MjY2OT
+MsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ==
 -->

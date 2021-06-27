@@ -5,14 +5,15 @@
 - 기존에 쓰이던 가상화 방법(Virtual Machine)과는 달리 성능의 손실이 거의 없습니다.
 # 가상 머신과 도커 컨테이너
 ## 기존 VM와 도커 사이의 OS관점에서 구조적 차이
-- 기존의 가상화 기술
--- 하이퍼바이저를 이용해 여러 개의 운영체제를 하나의 호스트에서 생성해 사용하는 방식
--- 여러 개의 운영체제는 가상 머신이라는 단위로 구별됨
+### 기존의 가상화 기술
+- 하이퍼바이저를 이용해 여러 개의 운영체제를 하나의 호스트에서 생성해 사용하는 방식
+- 여러 개의 운영체제는 가상 머신이라는 단위로 구별됨
 -- 하이퍼바이저에 의해 생성되고 관리되는 운영체제는 게스트 운영체제(Guest OS)라고 한다.
 -- 각 게스트 운영체제는 다른 게스트 운영체제와는 완전히 독립된 공간과 시스템 자원을 할당받아 사용한다.
 -- VirtualBox, VMware
 -- 각종 시스템 자원을 가상화하고 독립된 공간을 생성하는 작업은 성능상 손실을 일으킴
-- 도커 컨테이너
+
+### 도커 컨테이너
 -- 도커 컨테이너는 가상화된 공간을 생성하기 위해 리눅스의 자체 기능인 chroot, 네임스페이스(namespace), cgroup을 사용하여 프로세스 단위의 격리 환경을 만들어줌 
 -- => 성능 손실이 거의 없음
 -- 컨테이너에서 필요한 커널을 호스트의 커널과 공유하여 사용하고, 컨테이너 안에는 애플리케이션을 구동하는 데 필요한 라이브러리, 실행파일만 존재하기 때문에 이미지 크기가 상대적으로 작음
@@ -69,8 +70,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNDA5MDIwMSwtMTgzNTY2MjgwNCwtMT
-U1MTIwNzM5LC0xMDAyMTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3
-NzQ5LC0xOTI4OTI2NjkzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX
-0=
+eyJoaXN0b3J5IjpbLTIwODQzODc4MDksLTgzNDA5MDIwMSwtMT
+gzNTY2MjgwNCwtMTU1MTIwNzM5LC0xMDAyMTQ2NDk4LDExNDc5
+OTgzNiwxNDMyMjU3NzQ5LC0xOTI4OTI2NjkzLDM1OTQxNjI2MC
+wxNjAzNjc5MzkyXX0=
 -->

@@ -11,7 +11,6 @@
 - 기존에 쓰이던 가상화 방법(Virtual Machine)과는 달리 성능의 손실이 거의 없습니다.
 ## 가상 머신과 도커 컨테이너
 ### 기존 VM와 도커 사이의 OS관점에서 구조적 차이
-![Docker Architecture Diagram](https://docs.docker.com/engine/images/architecture.svg)
 - 기존의 가상화 기술
 -- 하이퍼바이저를 이용해 여러 개의 운영체제를 하나의 호스트에서 생성해 사용하는 방식
 -- 여러 개의 운영체제는 가상 머신이라는 단위로 구별됨
@@ -31,7 +30,7 @@
 
 
 ## 도커 client-server 구조
-
+![Docker Architecture Diagram](https://docs.docker.com/engine/images/architecture.svg)
  
 ## 도커 이미지, Dockerfile
 
@@ -160,6 +159,7 @@ Docker is written in the  [Go programming language](https://golang.org/)  and ta
 
 These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0Nzk5ODM2LDE0MzIyNTc3NDksLTE5Mj
-g5MjY2OTMsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ==
+eyJoaXN0b3J5IjpbLTIwNTU4MDY5MCwxMTQ3OTk4MzYsMTQzMj
+I1Nzc0OSwtMTkyODkyNjY5MywzNTk0MTYyNjAsMTYwMzY3OTM5
+Ml19
 -->

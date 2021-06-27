@@ -71,6 +71,7 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 # Reference
 https://docs.docker.com/get-started/overview/
 https://www.aquasec.com/cloud-native-academy/docker-container/docker-architecture/
+https://phoenixnap.com/kb/docker-image-vs-container
 #  To do
 - Docker Compose
 - Docker volume
@@ -79,9 +80,9 @@ https://www.aquasec.com/cloud-native-academy/docker-container/docker-architectur
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTcyODI4ODEsMTc3MjQzODMzLDE3MD
-EzMTIzNDEsLTU2Mjk4NDIxNywtMTA5ODAyNjU1MywtODM0MDkw
-MjAxLC0xODM1NjYyODA0LC0xNTUxMjA3MzksLTEwMDIxNDY0OT
-gsMTE0Nzk5ODM2LDE0MzIyNTc3NDksLTE5Mjg5MjY2OTMsMzU5
-NDE2MjYwLDE2MDM2NzkzOTJdfQ==
+eyJoaXN0b3J5IjpbLTEzNjI0OTkzNjIsLTEwMTcyODI4ODEsMT
+c3MjQzODMzLDE3MDEzMTIzNDEsLTU2Mjk4NDIxNywtMTA5ODAy
+NjU1MywtODM0MDkwMjAxLC0xODM1NjYyODA0LC0xNTUxMjA3Mz
+ksLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LDE0MzIyNTc3NDksLTE5
+Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ==
 -->

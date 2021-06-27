@@ -27,6 +27,7 @@
 
 # Docker Architecture
 ## 도커 client-server 구조
+![](https://wiki.aquasec.com/download/attachments/2854889/Docker_Engine.png?version=1&modificationDate=1520172702424&api=v2)
 Docker uses a client-server architecture. The Docker _client_ talks to the Docker _daemon_, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon _can_ run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
 ![Docker Architecture Diagram](https://docs.docker.com/engine/images/architecture.svg)
  
@@ -68,7 +69,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - 베이스 이미지는 이미지의 기반이 되는 이미지이다.(Os라고 생각하면 될듯)
 
 # Reference
-
+https://docs.docker.com/get-started/overview/
+https://www.aquasec.com/cloud-native-academy/docker-container/docker-architecture/
 #  To do
 - Docker Compose
 - Docker volume
@@ -77,9 +79,9 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MjQzODMzLDE3MDEzMTIzNDEsLTU2Mj
-k4NDIxNywtMTA5ODAyNjU1MywtODM0MDkwMjAxLC0xODM1NjYy
-ODA0LC0xNTUxMjA3MzksLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LD
-E0MzIyNTc3NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2
-NzkzOTJdfQ==
+eyJoaXN0b3J5IjpbLTEwMTcyODI4ODEsMTc3MjQzODMzLDE3MD
+EzMTIzNDEsLTU2Mjk4NDIxNywtMTA5ODAyNjU1MywtODM0MDkw
+MjAxLC0xODM1NjYyODA0LC0xNTUxMjA3MzksLTEwMDIxNDY0OT
+gsMTE0Nzk5ODM2LDE0MzIyNTc3NDksLTE5Mjg5MjY2OTMsMzU5
+NDE2MjYwLDE2MDM2NzkzOTJdfQ==
 -->

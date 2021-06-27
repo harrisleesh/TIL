@@ -33,7 +33,9 @@
 -- Because of their size, you can quickly  **scale**  in and out of containers and add identical containers.
 -- Also, containers are excellent for  **Continuous Integration and Continuous Deployment**  (CI/CD) implementation. They foster collaborative development by distributing and merging images among developers.
 - 단점
-- 
+-- A container uses the kernel of the host OS and has operating system dependencies. Therefore, containers can differ from the underlying OS by dependency, but not by type. The host’s kernel  **limits the use of other operating systems**.
+-- Containers still do not offer the same  **security and stability**  that VMs can. Since they share the host’s kernel, they cannot be as isolated as a virtual machine. Consequently, containers are process-level isolated, and one container can affect others by compromising the stability of the kernel.
+-- Moreover, once a container performs its task, it shuts down, deleting all the data inside of it. If you want the data to remain on the host server, you have to save it using  [Data Volumes](https://phoenixnap.com/kb/docker-volumes). This requires  **manual configuration and provisioning**  on the host.
 
 ##  How to Choose VMs vs Containers
 ### Virtual machines are a better solution if you need to:
@@ -103,11 +105,11 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDYxMzI3NiwtOTAzMTA2Nzk0LDQyND
-M2MTI2LDQ4MzEzNzY1OSwtODE1MzMyMzcsLTEzNjI0OTkzNjIs
-LTEwMTcyODI4ODEsMTc3MjQzODMzLDE3MDEzMTIzNDEsLTU2Mj
-k4NDIxNywtMTA5ODAyNjU1MywtODM0MDkwMjAxLC0xODM1NjYy
-ODA0LC0xNTUxMjA3MzksLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LD
-E0MzIyNTc3NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2
-NzkzOTJdfQ==
+eyJoaXN0b3J5IjpbMTg5NTE3OTg3OCwxODg0NjEzMjc2LC05MD
+MxMDY3OTQsNDI0MzYxMjYsNDgzMTM3NjU5LC04MTUzMzIzNywt
+MTM2MjQ5OTM2MiwtMTAxNzI4Mjg4MSwxNzcyNDM4MzMsMTcwMT
+MxMjM0MSwtNTYyOTg0MjE3LC0xMDk4MDI2NTUzLC04MzQwOTAy
+MDEsLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMTAwMjE0NjQ5OC
+wxMTQ3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODkyNjY5MywzNTk0
+MTYyNjBdfQ==
 -->

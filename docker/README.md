@@ -1,8 +1,4 @@
 
-- Why Docker?
-- What is Docker?
-- What is Container?
-- Docker Commands
 # Docker란?
 도커는 애플리케이션을 컨테이너를 사용해서 쉽게 사용할 수 있게 만들어진 오픈소스 프로젝트입니다.
 - 도커는 Go 언어로 작성돼 있습니다.
@@ -53,9 +49,16 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 
 # Reference
 
+#  To do
+- Docker Compose
+- Docker volume
+- Why Docker?
+- What is Docker?
+- What is Container?
+- Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MjA0OTU0OCwtMTgzNTY2MjgwNCwtMT
-U1MTIwNzM5LC0xMDAyMTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3
-NzQ5LC0xOTI4OTI2NjkzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX
-0=
+eyJoaXN0b3J5IjpbNDQ5MzYwMzUxLC0xODM1NjYyODA0LC0xNT
+UxMjA3MzksLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LDE0MzIyNTc3
+NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ
+==
 -->

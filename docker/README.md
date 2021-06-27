@@ -39,7 +39,8 @@
 1.  Maximize the number of apps running on a server
 2.  Deploy multiple instances of a single application
 3.  Have a lightweight system that quickly starts
-4.  Develop an application that runs on any underlying infrastructure# Docker Architecture
+4.  Develop an application that runs on any underlying infrastructure
+# Docker Architecture
 ## 도커 client-server 구조
 ![](https://wiki.aquasec.com/download/attachments/2854889/Docker_Engine.png?version=1&modificationDate=1520172702424&api=v2)
 Docker uses a client-server architecture. The Docker _client_ talks to the Docker _daemon_, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon _can_ run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
@@ -95,10 +96,10 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2OTM4MjI0LDQ4MzEzNzY1OSwtODE1Mz
-MyMzcsLTEzNjI0OTkzNjIsLTEwMTcyODI4ODEsMTc3MjQzODMz
-LDE3MDEzMTIzNDEsLTU2Mjk4NDIxNywtMTA5ODAyNjU1MywtOD
-M0MDkwMjAxLC0xODM1NjYyODA0LC0xNTUxMjA3MzksLTEwMDIx
-NDY0OTgsMTE0Nzk5ODM2LDE0MzIyNTc3NDksLTE5Mjg5MjY2OT
-MsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ==
+eyJoaXN0b3J5IjpbNDI0MzYxMjYsNDgzMTM3NjU5LC04MTUzMz
+IzNywtMTM2MjQ5OTM2MiwtMTAxNzI4Mjg4MSwxNzcyNDM4MzMs
+MTcwMTMxMjM0MSwtNTYyOTg0MjE3LC0xMDk4MDI2NTUzLC04Mz
+QwOTAyMDEsLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMTAwMjE0
+NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODkyNjY5My
+wzNTk0MTYyNjAsMTYwMzY3OTM5Ml19
 -->

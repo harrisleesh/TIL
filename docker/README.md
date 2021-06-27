@@ -22,7 +22,17 @@
 Docker uses a client-server architecture. The Docker _client_ talks to the Docker _daemon_, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon _can_ run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
 ![Docker Architecture Diagram](https://docs.docker.com/engine/images/architecture.svg)
  
+### The Docker daemon[](https://docs.docker.com/get-started/overview/#the-docker-daemon)
 
+The Docker daemon (`dockerd`) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.
+
+### The Docker client[](https://docs.docker.com/get-started/overview/#the-docker-client)
+
+The Docker client (`docker`) is the primary way that many Docker users interact with Docker. When you use commands such as  `docker run`, the client sends these commands to  `dockerd`, which carries them out. The  `docker`  command uses the Docker API. The Docker client can communicate with more than one daemon.
+
+### Docker registries[](https://docs.docker.com/get-started/overview/#docker-registries)
+
+A Docker  _registry_  stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry.
 # 도커 이미지, Dockerfile
 https://docs.docker.com/get-started/
 ## What is a container?[](https://docs.docker.com/get-started/#what-is-a-container)
@@ -58,8 +68,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI0NzY3ODEzLC0xODM1NjYyODA0LC0xNT
-UxMjA3MzksLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LDE0MzIyNTc3
-NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ
-==
+eyJoaXN0b3J5IjpbLTE4NjI1MDY2MDMsLTE4MzU2NjI4MDQsLT
+E1NTEyMDczOSwtMTAwMjE0NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1
+Nzc0OSwtMTkyODkyNjY5MywzNTk0MTYyNjAsMTYwMzY3OTM5Ml
+19
 -->

@@ -19,9 +19,10 @@
 
 # Docker Architecture
 ## 도커 client-server 구조
-
+Docker uses a client-server architecture. The Docker _client_ talks to the Docker _daemon_, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon _can_ run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
 ![Docker Architecture Diagram](https://docs.docker.com/engine/images/architecture.svg)
  
+
 # 도커 이미지, Dockerfile
 https://docs.docker.com/get-started/
 ## What is a container?[](https://docs.docker.com/get-started/#what-is-a-container)
@@ -57,7 +58,7 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5MzYwMzUxLC0xODM1NjYyODA0LC0xNT
+eyJoaXN0b3J5IjpbNTI0NzY3ODEzLC0xODM1NjYyODA0LC0xNT
 UxMjA3MzksLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LDE0MzIyNTc3
 NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ
 ==

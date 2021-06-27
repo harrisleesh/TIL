@@ -36,7 +36,9 @@
  
 ## 도커 이미지, Dockerfile
 https://docs.docker.com/get-started/
+### What is a container?[](https://docs.docker.com/get-started/#what-is-a-container)
 
+Now that you’ve run a container, what  _is_  a container? Simply put, a container is simply another process on your machine that has been isolated from all other processes on the host machine. That isolation leverages  [kernel namespaces and cgroups](https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504), features that have been in Linux for a long time. Docker has worked to make these capabilities approachable and easy to use.
 
 ## Dockerfile 만들기
 
@@ -163,7 +165,7 @@ Docker is written in the  [Go programming language](https://golang.org/)  and ta
 
 These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTEyMDczOSwtMTAwMjE0NjQ5OCwxMT
-Q3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODkyNjY5MywzNTk0MTYy
-NjAsMTYwMzY3OTM5Ml19
+eyJoaXN0b3J5IjpbMTkxNzcwMDI4OSwtMTU1MTIwNzM5LC0xMD
+AyMTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3NzQ5LC0xOTI4OTI2
+NjkzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX0=
 -->

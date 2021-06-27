@@ -5,7 +5,7 @@
 - 기존에 쓰이던 가상화 방법(Virtual Machine)과는 달리 성능의 손실이 거의 없습니다.
 # 가상 머신과 도커 컨테이너
 ## 기존 VM와 도커 사이의 OS관점에서 구조적 차이
-
+![](https://lh3.googleusercontent.com/uA93VmaaFG1jPCuA0U7fo2ZP74FCax6_8aH2Ht_H7-xhcEA-whSCSH8u2G58DxY9Jjdshu4_4r25X0qOwz2mCvdbLuObfhLnRqcWlqDr_DesiXiF14pyAotygkpNkoIV4oo9QGLBEDc2nZPJ0jdEsyC94lRtXiktDzyUs_ceZRGJkMKV8YefI7Y9P4WCwE_BxydgjjgxiMRTLtJ5-vTJusZRyETMI4nbTuv8yr5lnhLJX6nMjqWkCsUyjcOq8SEOgQi_LcxvW3RjyYAmwBhrpV9NOvGIrB7LsHgRce9m_R9WGSfasks_Xj8PkM63wMxtqtqO_01XlOEE39tlPtEwP2p19fL_aX4-guJEIALDSI5zuRr5TDWkDDutsD8LJLM0l3y7M-VUH0IKVKdcW_dKeN5U69O8Y34uC_ddRN8aYb0XmimmQLuRUmahOCnV21WMpXk91345aJIVY3vd1p18kQ-ZBl9c-pOs_WbNUI4rgaQjEtP8cHAgEUnpm4HKWTsRxzdubNNMucDlcXnwcSJ4zm4oy_OZi4m8qrMDM40tk2r2Wb0uFgzsrAaU2LyO4m1Vfo6NRWfDuKATyQ_FUO2k0hZf0sLKdaLwpxwmTEu36Mz55MjC0Q7nmPO-2I_b11eRDch1AYDw2jBgKERCQoZ9wm697OFssIyArXB--DIGKxPQWauflcNBcE350n5nGaJ4t7P11DCU24NaZ0r47IUx-CFg=w1385-h736-no?authuser=0)
 ### 기존의 가상화 기술
 - 특징
 -- 하이퍼바이저를 이용해 여러 개의 운영체제를 하나의 호스트에서 생성해 사용하는 방식
@@ -77,8 +77,9 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMTMxMjM0MSwtNTYyOTg0MjE3LC0xMD
-k4MDI2NTUzLC04MzQwOTAyMDEsLTE4MzU2NjI4MDQsLTE1NTEy
-MDczOSwtMTAwMjE0NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1Nzc0OS
-wtMTkyODkyNjY5MywzNTk0MTYyNjAsMTYwMzY3OTM5Ml19
+eyJoaXN0b3J5IjpbMTc3MjQzODMzLDE3MDEzMTIzNDEsLTU2Mj
+k4NDIxNywtMTA5ODAyNjU1MywtODM0MDkwMjAxLC0xODM1NjYy
+ODA0LC0xNTUxMjA3MzksLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LD
+E0MzIyNTc3NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2
+NzkzOTJdfQ==
 -->

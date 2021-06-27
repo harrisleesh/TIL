@@ -13,9 +13,13 @@
 -- 여러 개의 운영체제는 가상 머신이라는 단위로 구별됨
 -- 하이퍼바이저에 의해 생성되고 관리되는 운영체제는 게스트 운영체제(Guest OS)라고 한다.
 -- 각 게스트 운영체제는 다른 게스트 운영체제와는 완전히 독립된 공간과 시스템 자원을 할당받아 사용한다.
+-- Each VM is completely isolated from the host operating system.
 - 대표적인 VM 
 -- VirtualBox, VMware
 - 장점
+-- VMs  **reduce expenses**. Instead of running an application on a single server, a virtual machine enables utilizing one physical resource to do the job of many. Therefore, you do not have to buy, maintain and store enumerable stacks of servers.
+--Because there is one host machine, it allows you to  **efficiently manage**  all the virtual environments with the centralized power of the hypervisor. These systems are entirely separate from each other meaning you can install  **multiple system environments**.
+-- Most importantly, a virtual machine is isolated from the host OS and is a  **safe**  place for experimenting and developing applications.
 - 단점
 -- 성능저하 : 각종 시스템 자원을 가상화하고 독립된 공간을 생성하는 작업은 성능상 손실을 일으킴
 -- 이미지 크기 :  게스트 운영체제를 사용하기 위한 라이브러리, 커널 등을 전부 포함하기 때문에 이미지의 크기 또한 커진다. 
@@ -96,10 +100,10 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI0MzYxMjYsNDgzMTM3NjU5LC04MTUzMz
-IzNywtMTM2MjQ5OTM2MiwtMTAxNzI4Mjg4MSwxNzcyNDM4MzMs
-MTcwMTMxMjM0MSwtNTYyOTg0MjE3LC0xMDk4MDI2NTUzLC04Mz
-QwOTAyMDEsLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMTAwMjE0
-NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODkyNjY5My
-wzNTk0MTYyNjAsMTYwMzY3OTM5Ml19
+eyJoaXN0b3J5IjpbLTkwMzEwNjc5NCw0MjQzNjEyNiw0ODMxMz
+c2NTksLTgxNTMzMjM3LC0xMzYyNDk5MzYyLC0xMDE3MjgyODgx
+LDE3NzI0MzgzMywxNzAxMzEyMzQxLC01NjI5ODQyMTcsLTEwOT
+gwMjY1NTMsLTgzNDA5MDIwMSwtMTgzNTY2MjgwNCwtMTU1MTIw
+NzM5LC0xMDAyMTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3NzQ5LC
+0xOTI4OTI2NjkzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX0=
 -->

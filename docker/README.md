@@ -28,9 +28,18 @@
 -- 이미지 크기가 작음
 - 단점
 
-## ## How to Choose VMs vs Containers
-### 
-# Docker Architecture
+##  How to Choose VMs vs Containers
+### Virtual machines are a better solution if you need to:
+1.  Manage a variety of operating systems
+2.  Manage multiple apps on a single server
+3.  Run an app that requires all the resources and functionalities of an OS
+4.  Ensure full isolation and security
+### Containers are suitable if you need to:
+
+1.  Maximize the number of apps running on a server
+2.  Deploy multiple instances of a single application
+3.  Have a lightweight system that quickly starts
+4.  Develop an application that runs on any underlying infrastructure# Docker Architecture
 ## 도커 client-server 구조
 ![](https://wiki.aquasec.com/download/attachments/2854889/Docker_Engine.png?version=1&modificationDate=1520172702424&api=v2)
 Docker uses a client-server architecture. The Docker _client_ talks to the Docker _daemon_, which does the heavy lifting of building, running, and distributing your Docker containers. The Docker client and daemon _can_ run on the same system, or you can connect a Docker client to a remote Docker daemon. The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface. Another Docker client is Docker Compose, that lets you work with applications consisting of a set of containers.
@@ -86,10 +95,10 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NTUzODM4MCw0ODMxMzc2NTksLTgxNT
-MzMjM3LC0xMzYyNDk5MzYyLC0xMDE3MjgyODgxLDE3NzI0Mzgz
-MywxNzAxMzEyMzQxLC01NjI5ODQyMTcsLTEwOTgwMjY1NTMsLT
-gzNDA5MDIwMSwtMTgzNTY2MjgwNCwtMTU1MTIwNzM5LC0xMDAy
-MTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3NzQ5LC0xOTI4OTI2Nj
-kzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX0=
+eyJoaXN0b3J5IjpbODk2OTM4MjI0LDQ4MzEzNzY1OSwtODE1Mz
+MyMzcsLTEzNjI0OTkzNjIsLTEwMTcyODI4ODEsMTc3MjQzODMz
+LDE3MDEzMTIzNDEsLTU2Mjk4NDIxNywtMTA5ODAyNjU1MywtOD
+M0MDkwMjAxLC0xODM1NjYyODA0LC0xNTUxMjA3MzksLTEwMDIx
+NDY0OTgsMTE0Nzk5ODM2LDE0MzIyNTc3NDksLTE5Mjg5MjY2OT
+MsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ==
 -->

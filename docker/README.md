@@ -33,6 +33,7 @@ The Docker client (`docker`) is the primary way that many Docker users interact 
 ### Docker registries[](https://docs.docker.com/get-started/overview/#docker-registries)
 
 A Docker  _registry_  stores Docker images. Docker Hub is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. You can even run your own private registry.
+
 # 도커 이미지, Dockerfile
 https://docs.docker.com/get-started/
 ## What is a container?[](https://docs.docker.com/get-started/#what-is-a-container)
@@ -68,8 +69,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjI1MDY2MDMsLTE4MzU2NjI4MDQsLT
-E1NTEyMDczOSwtMTAwMjE0NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1
-Nzc0OSwtMTkyODkyNjY5MywzNTk0MTYyNjAsMTYwMzY3OTM5Ml
-19
+eyJoaXN0b3J5IjpbLTgzNDA5MDIwMSwtMTgzNTY2MjgwNCwtMT
+U1MTIwNzM5LC0xMDAyMTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3
+NzQ5LC0xOTI4OTI2NjkzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX
+0=
 -->

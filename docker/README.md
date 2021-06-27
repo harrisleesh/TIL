@@ -29,7 +29,9 @@
 
 
 
-## 도커 client-server 구조
+## Docker Architecture
+### 도커 client-server 구조
+
 ![Docker Architecture Diagram](https://docs.docker.com/engine/images/architecture.svg)
  
 ## 도커 이미지, Dockerfile
@@ -159,7 +161,7 @@ Docker is written in the  [Go programming language](https://golang.org/)  and ta
 
 These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTU4MDY5MCwxMTQ3OTk4MzYsMTQzMj
-I1Nzc0OSwtMTkyODkyNjY5MywzNTk0MTYyNjAsMTYwMzY3OTM5
-Ml19
+eyJoaXN0b3J5IjpbLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LDE0Mz
+IyNTc3NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2Nzkz
+OTJdfQ==
 -->

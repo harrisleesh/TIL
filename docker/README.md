@@ -14,9 +14,8 @@
 - 대표적인 VM 
 -- VirtualBox, VMware
 - 단점
--- 성능상 손실
-- 각종 시스템 자원을 가상화하고 독립된 공간을 생성하는 작업은 성능상 손실을 일으킴
-- 게스트 운영체제를 사용하기 위한 라이브러리, 커널 등을 전부 포함하기 때문에 이미지의 크기 또한 커진다.
+-- 성능저하 : 각종 시스템 자원을 가상화하고 독립된 공간을 생성하는 작업은 성능상 손실을 일으킴
+-- 이미지 크기 :  게스트 운영체제를 사용하기 위한 라이브러리, 커널 등을 전부 포함하기 때문에 이미지의 크기 또한 커진다. 
 ### 도커 컨테이너
 -- 도커 컨테이너는 가상화된 공간을 생성하기 위해 리눅스의 자체 기능인 chroot, 네임스페이스(namespace), cgroup을 사용하여 프로세스 단위의 격리 환경을 만들어줌 
 -- => 성능 손실이 거의 없음
@@ -74,8 +73,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMTEwMzYzNiwtODM0MDkwMjAxLC0xOD
-M1NjYyODA0LC0xNTUxMjA3MzksLTEwMDIxNDY0OTgsMTE0Nzk5
-ODM2LDE0MzIyNTc3NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLD
-E2MDM2NzkzOTJdfQ==
+eyJoaXN0b3J5IjpbLTEwOTgwMjY1NTMsLTgzNDA5MDIwMSwtMT
+gzNTY2MjgwNCwtMTU1MTIwNzM5LC0xMDAyMTQ2NDk4LDExNDc5
+OTgzNiwxNDMyMjU3NzQ5LC0xOTI4OTI2NjkzLDM1OTQxNjI2MC
+wxNjAzNjc5MzkyXX0=
 -->

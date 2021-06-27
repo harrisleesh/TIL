@@ -5,6 +5,7 @@
 - 기존에 쓰이던 가상화 방법(Virtual Machine)과는 달리 성능의 손실이 거의 없습니다.
 # 가상 머신과 도커 컨테이너
 ## 기존 VM와 도커 사이의 OS관점에서 구조적 차이
+
 ### 기존의 가상화 기술
 - 특징
 -- 하이퍼바이저를 이용해 여러 개의 운영체제를 하나의 호스트에서 생성해 사용하는 방식
@@ -76,8 +77,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Mjk4NDIxNywtMTA5ODAyNjU1MywtOD
-M0MDkwMjAxLC0xODM1NjYyODA0LC0xNTUxMjA3MzksLTEwMDIx
-NDY0OTgsMTE0Nzk5ODM2LDE0MzIyNTc3NDksLTE5Mjg5MjY2OT
-MsMzU5NDE2MjYwLDE2MDM2NzkzOTJdfQ==
+eyJoaXN0b3J5IjpbMTcwMTMxMjM0MSwtNTYyOTg0MjE3LC0xMD
+k4MDI2NTUzLC04MzQwOTAyMDEsLTE4MzU2NjI4MDQsLTE1NTEy
+MDczOSwtMTAwMjE0NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1Nzc0OS
+wtMTkyODkyNjY5MywzNTk0MTYyNjAsMTYwMzY3OTM5Ml19
 -->

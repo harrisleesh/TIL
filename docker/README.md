@@ -30,7 +30,10 @@
 - 장점
 -- 성능 손실이 거의 없음
 -- 이미지 크기가 작음
+-- Because of their size, you can quickly  **scale**  in and out of containers and add identical containers.
+-- Also, containers are excellent for  **Continuous Integration and Continuous Deployment**  (CI/CD) implementation. They foster collaborative development by distributing and merging images among developers.
 - 단점
+- 
 
 ##  How to Choose VMs vs Containers
 ### Virtual machines are a better solution if you need to:
@@ -100,10 +103,11 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzEwNjc5NCw0MjQzNjEyNiw0ODMxMz
-c2NTksLTgxNTMzMjM3LC0xMzYyNDk5MzYyLC0xMDE3MjgyODgx
-LDE3NzI0MzgzMywxNzAxMzEyMzQxLC01NjI5ODQyMTcsLTEwOT
-gwMjY1NTMsLTgzNDA5MDIwMSwtMTgzNTY2MjgwNCwtMTU1MTIw
-NzM5LC0xMDAyMTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3NzQ5LC
-0xOTI4OTI2NjkzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX0=
+eyJoaXN0b3J5IjpbMTg4NDYxMzI3NiwtOTAzMTA2Nzk0LDQyND
+M2MTI2LDQ4MzEzNzY1OSwtODE1MzMyMzcsLTEzNjI0OTkzNjIs
+LTEwMTcyODI4ODEsMTc3MjQzODMzLDE3MDEzMTIzNDEsLTU2Mj
+k4NDIxNywtMTA5ODAyNjU1MywtODM0MDkwMjAxLC0xODM1NjYy
+ODA0LC0xNTUxMjA3MzksLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LD
+E0MzIyNTc3NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2
+NzkzOTJdfQ==
 -->

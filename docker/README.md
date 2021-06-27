@@ -23,12 +23,6 @@
 -- => 성능 손실이 거의 없음
 -- 컨테이너에서 필요한 커널을 호스트의 커널과 공유하여 사용하고, 컨테이너 안에는 애플리케이션을 구동하는 데 필요한 라이브러리, 실행파일만 존재하기 때문에 이미지 크기가 상대적으로 작음
 
-## Docker image
-도커 이미지란 도커 컨테이너를 만들기 위해 필요한 속성이나 종속성들을 포함한 소프트웨어 패키지이다.
-도커 이미지를 도커 허브에서 다른 사람들이 만들어 놓은 것을 pull해서 사용할 수 있고, 직접 도커 이미지를 만들어서 도커 허브에 push 할 수 있다.
-
-
-
 ## Docker Architecture
 ### 도커 client-server 구조
 
@@ -42,6 +36,10 @@ Now that you’ve run a container, what  _is_  a container? Simply put, a contai
 When running a container, it uses an isolated filesystem. This custom filesystem is provided by a  **container image**. Since the image contains the container’s filesystem, it must contain everything needed to run an application - all dependencies, configuration, scripts, binaries, etc. The image also contains other configuration for the container, such as environment variables, a default command to run, and other metadata.
 
 We’ll dive deeper into images later on, covering topics such as layering, best practices, and more.
+### Docker image
+도커 이미지란 도커 컨테이너를 만들기 위해 필요한 속성이나 종속성들을 포함한 소프트웨어 패키지이다.
+도커 이미지를 도커 허브에서 다른 사람들이 만들어 놓은 것을 pull해서 사용할 수 있고, 직접 도커 이미지를 만들어서 도커 허브에 push 할 수 있다.
+
 ## Dockerfile 만들기
 
 ### 도커파일
@@ -167,7 +165,8 @@ Docker is written in the  [Go programming language](https://golang.org/)  and ta
 
 These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMT
-AwMjE0NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODky
-NjY5MywzNTk0MTYyNjAsMTYwMzY3OTM5Ml19
+eyJoaXN0b3J5IjpbMTYzMTg0OTk1MywtMTgzNTY2MjgwNCwtMT
+U1MTIwNzM5LC0xMDAyMTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3
+NzQ5LC0xOTI4OTI2NjkzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX
+0=
 -->

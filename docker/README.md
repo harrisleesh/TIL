@@ -88,7 +88,6 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - 추가적으로 필요한 파일을 다운받기 위한 몇가지 명령어 명시
 - 시작시 실행될 명령어 명시
 ### 베이스 이미지란?
-
 - 도커 이미지는 여러개의 이미지 레이어로 구성된다.
 - 베이스 이미지는 이미지의 기반이 되는 이미지이다.(Os라고 생각하면 될듯)
 
@@ -105,11 +104,11 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NTE3OTg3OCwxODg0NjEzMjc2LC05MD
-MxMDY3OTQsNDI0MzYxMjYsNDgzMTM3NjU5LC04MTUzMzIzNywt
-MTM2MjQ5OTM2MiwtMTAxNzI4Mjg4MSwxNzcyNDM4MzMsMTcwMT
-MxMjM0MSwtNTYyOTg0MjE3LC0xMDk4MDI2NTUzLC04MzQwOTAy
-MDEsLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMTAwMjE0NjQ5OC
-wxMTQ3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODkyNjY5MywzNTk0
-MTYyNjBdfQ==
+eyJoaXN0b3J5IjpbLTk5MDI4OTM2LDE4ODQ2MTMyNzYsLTkwMz
+EwNjc5NCw0MjQzNjEyNiw0ODMxMzc2NTksLTgxNTMzMjM3LC0x
+MzYyNDk5MzYyLC0xMDE3MjgyODgxLDE3NzI0MzgzMywxNzAxMz
+EyMzQxLC01NjI5ODQyMTcsLTEwOTgwMjY1NTMsLTgzNDA5MDIw
+MSwtMTgzNTY2MjgwNCwtMTU1MTIwNzM5LC0xMDAyMTQ2NDk4LD
+ExNDc5OTgzNiwxNDMyMjU3NzQ5LC0xOTI4OTI2NjkzLDM1OTQx
+NjI2MF19
 -->

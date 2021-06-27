@@ -35,6 +35,8 @@
 ![Docker Architecture Diagram](https://docs.docker.com/engine/images/architecture.svg)
  
 ## 도커 이미지, Dockerfile
+https://docs.docker.com/get-started/
+
 
 ## Dockerfile 만들기
 
@@ -161,7 +163,7 @@ Docker is written in the  [Go programming language](https://golang.org/)  and ta
 
 These namespaces provide a layer of isolation. Each aspect of a container runs in a separate namespace and its access is limited to that namespace.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDIxNDY0OTgsMTE0Nzk5ODM2LDE0Mz
-IyNTc3NDksLTE5Mjg5MjY2OTMsMzU5NDE2MjYwLDE2MDM2Nzkz
-OTJdfQ==
+eyJoaXN0b3J5IjpbLTE1NTEyMDczOSwtMTAwMjE0NjQ5OCwxMT
+Q3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODkyNjY5MywzNTk0MTYy
+NjAsMTYwMzY3OTM5Ml19
 -->

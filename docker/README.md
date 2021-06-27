@@ -6,7 +6,7 @@
 # 가상 머신과 도커 컨테이너
 ## 기존 VM와 도커 사이의 OS관점에서 구조적 차이
 ![The difference in structure between containers and virtual machines](https://phoenixnap.com/kb/wp-content/uploads/2021/04/container-vs-virtual-machine.png)
-![](https://lh3.googleusercontent.com/uA93VmaaFG1jPCuA0U7fo2ZP74FCax6_8aH2Ht_H7-xhcEA-whSCSH8u2G58DxY9Jjdshu4_4r25X0qOwz2mCvdbLuObfhLnRqcWlqDr_DesiXiF14pyAotygkpNkoIV4oo9QGLBEDc2nZPJ0jdEsyC94lRtXiktDzyUs_ceZRGJkMKV8YefI7Y9P4WCwE_BxydgjjgxiMRTLtJ5-vTJusZRyETMI4nbTuv8yr5lnhLJX6nMjqWkCsUyjcOq8SEOgQi_LcxvW3RjyYAmwBhrpV9NOvGIrB7LsHgRce9m_R9WGSfasks_Xj8PkM63wMxtqtqO_01XlOEE39tlPtEwP2p19fL_aX4-guJEIALDSI5zuRr5TDWkDDutsD8LJLM0l3y7M-VUH0IKVKdcW_dKeN5U69O8Y34uC_ddRN8aYb0XmimmQLuRUmahOCnV21WMpXk91345aJIVY3vd1p18kQ-ZBl9c-pOs_WbNUI4rgaQjEtP8cHAgEUnpm4HKWTsRxzdubNNMucDlcXnwcSJ4zm4oy_OZi4m8qrMDM40tk2r2Wb0uFgzsrAaU2LyO4m1Vfo6NRWfDuKATyQ_FUO2k0hZf0sLKdaLwpxwmTEu36Mz55MjC0Q7nmPO-2I_b11eRDch1AYDw2jBgKERCQoZ9wm697OFssIyArXB--DIGKxPQWauflcNBcE350n5nGaJ4t7P11DCU24NaZ0r47IUx-CFg=w1385-h736-no?authuser=0)
+
 ### 기존의 가상화 기술
 - 특징
 -- 하이퍼바이저를 이용해 여러 개의 운영체제를 하나의 호스트에서 생성해 사용하는 방식
@@ -15,6 +15,7 @@
 -- 각 게스트 운영체제는 다른 게스트 운영체제와는 완전히 독립된 공간과 시스템 자원을 할당받아 사용한다.
 - 대표적인 VM 
 -- VirtualBox, VMware
+- 장점
 - 단점
 -- 성능저하 : 각종 시스템 자원을 가상화하고 독립된 공간을 생성하는 작업은 성능상 손실을 일으킴
 -- 이미지 크기 :  게스트 운영체제를 사용하기 위한 라이브러리, 커널 등을 전부 포함하기 때문에 이미지의 크기 또한 커진다. 
@@ -25,7 +26,10 @@
 - 장점
 -- 성능 손실이 거의 없음
 -- 이미지 크기가 작음
+- 단점
 
+## ## How to Choose VMs vs Containers
+### 
 # Docker Architecture
 ## 도커 client-server 구조
 ![](https://wiki.aquasec.com/download/attachments/2854889/Docker_Engine.png?version=1&modificationDate=1520172702424&api=v2)
@@ -82,10 +86,10 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgzMTM3NjU5LC04MTUzMzIzNywtMTM2Mj
-Q5OTM2MiwtMTAxNzI4Mjg4MSwxNzcyNDM4MzMsMTcwMTMxMjM0
-MSwtNTYyOTg0MjE3LC0xMDk4MDI2NTUzLC04MzQwOTAyMDEsLT
-E4MzU2NjI4MDQsLTE1NTEyMDczOSwtMTAwMjE0NjQ5OCwxMTQ3
-OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODkyNjY5MywzNTk0MTYyNj
-AsMTYwMzY3OTM5Ml19
+eyJoaXN0b3J5IjpbMTg5NTUzODM4MCw0ODMxMzc2NTksLTgxNT
+MzMjM3LC0xMzYyNDk5MzYyLC0xMDE3MjgyODgxLDE3NzI0Mzgz
+MywxNzAxMzEyMzQxLC01NjI5ODQyMTcsLTEwOTgwMjY1NTMsLT
+gzNDA5MDIwMSwtMTgzNTY2MjgwNCwtMTU1MTIwNzM5LC0xMDAy
+MTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3NzQ5LC0xOTI4OTI2Nj
+kzLDM1OTQxNjI2MCwxNjAzNjc5MzkyXX0=
 -->

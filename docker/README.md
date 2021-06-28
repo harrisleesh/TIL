@@ -91,6 +91,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - 도커 이미지는 여러개의 이미지 레이어로 구성된다.
 - 베이스 이미지는 이미지의 기반이 되는 이미지이다.(Os라고 생각하면 될듯)
 
+# Docker Volume
+
 # Reference
 https://docs.docker.com/get-started/overview/
 https://www.aquasec.com/cloud-native-academy/docker-container/docker-architecture/
@@ -104,11 +106,11 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MDI4OTM2LDE4ODQ2MTMyNzYsLTkwMz
-EwNjc5NCw0MjQzNjEyNiw0ODMxMzc2NTksLTgxNTMzMjM3LC0x
-MzYyNDk5MzYyLC0xMDE3MjgyODgxLDE3NzI0MzgzMywxNzAxMz
-EyMzQxLC01NjI5ODQyMTcsLTEwOTgwMjY1NTMsLTgzNDA5MDIw
-MSwtMTgzNTY2MjgwNCwtMTU1MTIwNzM5LC0xMDAyMTQ2NDk4LD
-ExNDc5OTgzNiwxNDMyMjU3NzQ5LC0xOTI4OTI2NjkzLDM1OTQx
-NjI2MF19
+eyJoaXN0b3J5IjpbLTYwNDA2ODg3LC05OTAyODkzNiwxODg0Nj
+EzMjc2LC05MDMxMDY3OTQsNDI0MzYxMjYsNDgzMTM3NjU5LC04
+MTUzMzIzNywtMTM2MjQ5OTM2MiwtMTAxNzI4Mjg4MSwxNzcyND
+M4MzMsMTcwMTMxMjM0MSwtNTYyOTg0MjE3LC0xMDk4MDI2NTUz
+LC04MzQwOTAyMDEsLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMT
+AwMjE0NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODky
+NjY5M119
 -->

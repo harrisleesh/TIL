@@ -92,6 +92,7 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 - 베이스 이미지는 이미지의 기반이 되는 이미지이다.(Os라고 생각하면 될듯)
 
 # Docker Volume
+![volumes on the Docker host](https://docs.docker.com/storage/images/types-of-mounts-volume.png)
 
 # Reference
 https://docs.docker.com/get-started/overview/
@@ -106,11 +107,11 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDA2ODg3LC05OTAyODkzNiwxODg0Nj
-EzMjc2LC05MDMxMDY3OTQsNDI0MzYxMjYsNDgzMTM3NjU5LC04
-MTUzMzIzNywtMTM2MjQ5OTM2MiwtMTAxNzI4Mjg4MSwxNzcyND
-M4MzMsMTcwMTMxMjM0MSwtNTYyOTg0MjE3LC0xMDk4MDI2NTUz
-LC04MzQwOTAyMDEsLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMT
-AwMjE0NjQ5OCwxMTQ3OTk4MzYsMTQzMjI1Nzc0OSwtMTkyODky
-NjY5M119
+eyJoaXN0b3J5IjpbLTU3NDczMjIxMywtNjA0MDY4ODcsLTk5MD
+I4OTM2LDE4ODQ2MTMyNzYsLTkwMzEwNjc5NCw0MjQzNjEyNiw0
+ODMxMzc2NTksLTgxNTMzMjM3LC0xMzYyNDk5MzYyLC0xMDE3Mj
+gyODgxLDE3NzI0MzgzMywxNzAxMzEyMzQxLC01NjI5ODQyMTcs
+LTEwOTgwMjY1NTMsLTgzNDA5MDIwMSwtMTgzNTY2MjgwNCwtMT
+U1MTIwNzM5LC0xMDAyMTQ2NDk4LDExNDc5OTgzNiwxNDMyMjU3
+NzQ5XX0=
 -->

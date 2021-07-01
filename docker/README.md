@@ -95,7 +95,47 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 ![volumes on the Docker host](https://docs.docker.com/storage/images/types-of-mounts-volume.png)
 
 # Docker Compose
+Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. To learn more about all the features of Compose, see  [the list of features](https://docs.docker.com/compose/#features).
 
+Compose works in all environments: production, staging, development, testing, as well as CI workflows. You can learn more about each case in  [Common Use Cases](https://docs.docker.com/compose/#common-use-cases).
+
+Using Compose is basically a three-step process:
+
+1.  Define your app’s environment with a  `Dockerfile`  so it can be reproduced anywhere.
+    
+2.  Define the services that make up your app in  `docker-compose.yml`  so they can be run together in an isolated environment.
+    
+3.  Run  `docker compose up`  and the  [Docker compose command](https://docs.docker.com/compose/cli-command/)  starts and runs your entire app. You can alternatively run  `docker-compose up`  using the docker-compose binary.
+    
+
+A  `docker-compose.yml`  looks like this:
+```
+version: "3.9"  # optional since v1.27.0
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+      - logvolume01:/var/log
+    links:
+      - redis
+  redis:
+    image: redis
+volumes:
+  logvolume01: {}
+
+```
+
+For more information about the Compose file, see the  [Compose file reference](https://docs.docker.com/compose/compose-file/).
+
+Compose has commands for managing the whole lifecycle of your application:
+
+-   Start, stop, and rebuild services
+-   View the status of running services
+-   Stream the log output of running services
+-   Run a one-off command on a service
 # Reference
 https://docs.docker.com/get-started/overview/
 https://www.aquasec.com/cloud-native-academy/docker-container/docker-architecture/
@@ -109,7 +149,7 @@ https://phoenixnap.com/kb/containers-vs-vms
 - What is Container?
 - Docker Commands
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjA4MDYwMCwtNTc0NzMyMjEzLC02MD
+eyJoaXN0b3J5IjpbMTQzMjU2Mzk2MiwtNTc0NzMyMjEzLC02MD
 QwNjg4NywtOTkwMjg5MzYsMTg4NDYxMzI3NiwtOTAzMTA2Nzk0
 LDQyNDM2MTI2LDQ4MzEzNzY1OSwtODE1MzMyMzcsLTEzNjI0OT
 kzNjIsLTEwMTcyODI4ODEsMTc3MjQzODMzLDE3MDEzMTIzNDEs

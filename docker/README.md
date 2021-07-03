@@ -95,6 +95,8 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 ![volumes on the Docker host](https://docs.docker.com/storage/images/types-of-mounts-volume.png)
 
 # Docker Compose
+다중 컨테이너 도커 애플리케이션을 관리
+
 Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. To learn more about all the features of Compose, see  [the list of features](https://docs.docker.com/compose/#features).
 
 Compose works in all environments: production, staging, development, testing, as well as CI workflows. You can learn more about each case in  [Common Use Cases](https://docs.docker.com/compose/#common-use-cases).
@@ -146,11 +148,11 @@ https://phoenixnap.com/kb/containers-vs-vms
 - Docker volume
 - Why Docker?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwOTE3NjgzMiwxNDMyNTYzOTYyLC01Nz
-Q3MzIyMTMsLTYwNDA2ODg3LC05OTAyODkzNiwxODg0NjEzMjc2
-LC05MDMxMDY3OTQsNDI0MzYxMjYsNDgzMTM3NjU5LC04MTUzMz
-IzNywtMTM2MjQ5OTM2MiwtMTAxNzI4Mjg4MSwxNzcyNDM4MzMs
-MTcwMTMxMjM0MSwtNTYyOTg0MjE3LC0xMDk4MDI2NTUzLC04Mz
-QwOTAyMDEsLTE4MzU2NjI4MDQsLTE1NTEyMDczOSwtMTAwMjE0
-NjQ5OF19
+eyJoaXN0b3J5IjpbMTM5OTA0Mjg1LDE1MDkxNzY4MzIsMTQzMj
+U2Mzk2MiwtNTc0NzMyMjEzLC02MDQwNjg4NywtOTkwMjg5MzYs
+MTg4NDYxMzI3NiwtOTAzMTA2Nzk0LDQyNDM2MTI2LDQ4MzEzNz
+Y1OSwtODE1MzMyMzcsLTEzNjI0OTkzNjIsLTEwMTcyODI4ODEs
+MTc3MjQzODMzLDE3MDEzMTIzNDEsLTU2Mjk4NDIxNywtMTA5OD
+AyNjU1MywtODM0MDkwMjAxLC0xODM1NjYyODA0LC0xNTUxMjA3
+MzldfQ==
 -->

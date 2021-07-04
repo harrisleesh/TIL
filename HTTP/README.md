@@ -2,9 +2,9 @@
 
 ### URI? URL? URN?
 
-- "URI는 로케이터(locator), 이름(name) 또는 둘다 추가로 분류될 수 있다."-
+- "URI는 로케이터(locator), 이름(name) 또는 둘다 추가로 분류될 수 있다."
+![image](https://user-images.githubusercontent.com/29927233/124374089-3fb57980-dcd3-11eb-8f9f-166655d6d05a.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/89e89807-736d-4229-b50d-6d6acd4c78b5/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/89e89807-736d-4229-b50d-6d6acd4c78b5/Untitled.png)
 
 - URL - Locator : 리소스가 있는 위치를 지정
 - URN - Name: 리소스에 이름을 부여

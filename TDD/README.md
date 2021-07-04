@@ -32,7 +32,8 @@
 -   반복되는 문제 해결에 비용이 많이 쓰인다면
 -   연습하고, 연습하고, 연습해서 생각의 비용이 줄어들도록 뇌에 새겨라
 
+# 코드기능 명세
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4ODUyMjI2MF19
+eyJoaXN0b3J5IjpbLTE3Mjc4ODUwNjcsMTE4ODUyMjI2MF19
 -->

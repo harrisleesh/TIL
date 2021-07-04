@@ -51,5 +51,5 @@
 - 철저히 수동적
 - 융통성 없음
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk0NDk1MTE2LDExODg1MjIyNjBdfQ==
+eyJoaXN0b3J5IjpbMjk0NDk1MTE2XX0=
 -->

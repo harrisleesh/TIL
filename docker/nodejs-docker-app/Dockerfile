@@ -5,10 +5,13 @@ FROM node:10
 WORKDIR /usr/src/app
 
 # Copy package.json
-COPY ./ ./
+COPY ./package.json ./
 
 # download add files
 RUN npm install
+
+# Copy package.json
+COPY ./ ./
 
 # commands initialize container
 CMD ["node", "server.js"]

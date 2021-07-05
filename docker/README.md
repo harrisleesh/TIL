@@ -93,7 +93,7 @@ We’ll dive deeper into images later on, covering topics such as layering, best
 
 # Docker Volume
 ![volumes on the Docker host](https://docs.docker.com/storage/images/types-of-mounts-volume.png)
-``` docker -v /usr/src/app/node_modules -v $(pwd):/usr/src/app
+``` docker -v /usr/src/app/node_modules -v $(pwd):/usr/src/app ```
 
 # Docker Compose
 다중 컨테이너 도커 애플리케이션을 관리
@@ -149,11 +149,11 @@ https://phoenixnap.com/kb/containers-vs-vms
 - Docker volume
 - Why Docker?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ1OTYwMzAsMTM5OTA0Mjg1LDE1MD
-kxNzY4MzIsMTQzMjU2Mzk2MiwtNTc0NzMyMjEzLC02MDQwNjg4
-NywtOTkwMjg5MzYsMTg4NDYxMzI3NiwtOTAzMTA2Nzk0LDQyND
-M2MTI2LDQ4MzEzNzY1OSwtODE1MzMyMzcsLTEzNjI0OTkzNjIs
-LTEwMTcyODI4ODEsMTc3MjQzODMzLDE3MDEzMTIzNDEsLTU2Mj
-k4NDIxNywtMTA5ODAyNjU1MywtODM0MDkwMjAxLC0xODM1NjYy
-ODA0XX0=
+eyJoaXN0b3J5IjpbODExMzY0ODY2LDEzOTkwNDI4NSwxNTA5MT
+c2ODMyLDE0MzI1NjM5NjIsLTU3NDczMjIxMywtNjA0MDY4ODcs
+LTk5MDI4OTM2LDE4ODQ2MTMyNzYsLTkwMzEwNjc5NCw0MjQzNj
+EyNiw0ODMxMzc2NTksLTgxNTMzMjM3LC0xMzYyNDk5MzYyLC0x
+MDE3MjgyODgxLDE3NzI0MzgzMywxNzAxMzEyMzQxLC01NjI5OD
+QyMTcsLTEwOTgwMjY1NTMsLTgzNDA5MDIwMSwtMTgzNTY2Mjgw
+NF19
 -->

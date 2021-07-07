@@ -26,3 +26,5 @@
 Ch6 AOP
 ## Web
 - HTTP vs HTTPS
+- Nginx
+- CORS

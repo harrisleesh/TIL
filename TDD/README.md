@@ -50,7 +50,8 @@
 - 코드를 통해 프로그래머로부터 지식을 전달받음
 - 철저히 수동적
 - 융통성 없음
-- 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDUxNjk5OSwyOTQ0OTUxMTZdfQ==
+eyJoaXN0b3J5IjpbMTU3NTU1MDY1MCwxNjk0NTE2OTk5LDI5ND
+Q5NTExNl19
 -->

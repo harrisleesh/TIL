@@ -12,6 +12,6 @@ Link: [Google][googlelink]
 
 
 
-[Google][googlelink]
+[asdf][httpwebbasiclink]
 
-[googlelink]: https://google.com "Go google"
+[httpwebbasiclink]: https://google.com "Go google"

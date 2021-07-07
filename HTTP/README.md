@@ -1,4 +1,4 @@
-### 1. [HTTPbasic] [HTTPbasic]
+### 1. [HTTPbasic]
 ### 2. HTTPmethod
 ### 3. HTTPmethoduse
 

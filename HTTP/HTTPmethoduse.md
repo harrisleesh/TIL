@@ -25,3 +25,15 @@
 - HTTP API를 통한 데이터 전송
     - 회원 가입, 상품 주문, 데이터 변경
     - 서버 to 서버, 앱 클라이언트, 웹 클라이언트(Ajax)
+# HTML Form 데이터 전송
+
+- HTML Form submit시 POST 전송
+    - 예) 회원 가입, 상품 주문, 데이터 변경
+- Content-Type: application/x-www-form-urlencoded 사용
+    - form의 내용을 메시지 바디를 통해서 전송(key=value 형식)
+    - 전송 데이터를 url encoding 처리
+- HTML Form은 GET 전송도 가능
+- Content-Type: multipart/form-data
+    - 파일 업로드 같은 바이너리 데이터 전송시 사용
+    - 다른 종류의 여러 파일과 폼의 내용 함께 전송 가능
+- 참고: HTML Form 전송은 GET,POST만 지원

@@ -11,6 +11,9 @@
 - sort
 - hash
 ## AWS
+## CI/CD
+- Travis CI
+- Github Actions
 ## DataBase
 - DB Sharding
 ## DataStructure

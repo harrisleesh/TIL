@@ -119,8 +119,8 @@
 -   모듈 재사용
 -   라이브러리
 
-### 단위 테스트
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMxMzY5ODY0LC04NzI2MDQxNzYsMTY5ND
-UxNjk5OSwyOTQ0OTUxMTZdfQ==
--->
+# 단위 테스트
+
+- 반복되는 테스트를 할 때, 테스트도 개선이 필요하다.
+
+### Parameterized test

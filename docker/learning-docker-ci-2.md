@@ -148,6 +148,63 @@ AWS Elastic Beanstalk는 Apache, Nginx 같은 친숙한 서버에서 Java, NET, 
 
 # Elastic Beanstalk 환경 구성하기
 ![image](https://user-images.githubusercontent.com/29927233/125149895-bb517380-e176-11eb-8550-9e72c1f37af6.png)
+# .travis.yml 파일 작성하기 (배포 부분)
+
+- 현재는 도커 이미지를 생성 후 어플을 실행하여 테스트 하는 부분까지 travis 설정을 하였습니다.
+- 이제는 테스트에 성공한 소스를 AWS Elastic Beanstalk에 자동으로 배포해주는 것을 작성해야함
+
+## travis 설정 코드
+
+```jsx
+sudo: required
+
+language: generic
+
+services: 
+  - docker
+
+before_install:
+  - echo "start creating an image with dockerfile"
+  - docker build -t harrisleesh/docker-react-app -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true harrisleesh/docker-react-app npm run test -- --coverage
+// 배포 관련 부분
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-northeast-2"
+  app: "docker-react-app"
+  env: "Dockerreactapp-env"
+  bucket_name: "elasticbeanstalk-ap-northeast-2-762224883854"
+  bucket_path: "docker-react-app"
+  on:
+    branch: master
+```
+
+# Tavis CI의 AWS 접근을 위한 API 생성
+
+## IAM(Identity and Access Management)
+
+- AWS 리소스에 대한 액세스를 안전하게 제어할 수 있는 웹 서비스입니다.
+- IAM을 사용하여 리소스를 사용하도록 인증(로그인) 및 권한 부여(권한 있음)된 대상을 제어합니다.
+
+### Root 사용자
+
+- 현재 우리가 청므 가입하여 사용하고 있는 계정
+- AWS 서비스 및 리소스에 대한 완전한 액세스 권한이 있음
+- 하지만 일상적인 작업이든, 관리 작업이든 Root 사용자를 사용하는 것은 좋지 않습니다. (보안을 위해서!!!)
+    - 그래서 IAM 유저 생성
+
+### IAM 사용자
+
+- root 사용자가 부여한 권한만 가지고 있음
+
+### 인증 (Travis CI → AWS)
+
+- 인증을 위해서는 API Key 가 필요합니다.
+- AWS에서 제공해주는 Secret Key(API key)를 Travis yml 에 적어주면 됩니다.
+- 직접 API 키를 Travis yml파일에 적어 주면 노출이 되기 때문에 다른곳에 적고 그것을 가져와야 한다.
+
 
 # Reference
 

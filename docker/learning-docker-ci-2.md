@@ -97,9 +97,55 @@ services:
 
 ## 첫번째 단계 - builder stage
 
+- build 파일을 생성하는 단계
+
+```jsx
+FROM node:alpine as builder
+WORKDIR '/usr/src/app'
+COPY package.json .
+RUN npm install
+COPY ./ ./
+CMD ["npm","run","build"]
+```
+
 ## 두번째 단계 - run stage
 
--   Nginx 가동
+- Nginx 도커 이미지를 이용한 Nginx 시작
+
+```jsx
+FROM nginx
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+```
+
+- —from=builder : 위의 builder 스테이지 에서 나온 결과가 /usr/src/app/build 경로에 있음을 명시해준다.
+- /usr/share/nginx/html 의 경로에 복사해준다.
+- 위의 nginx 경로는 docker nginx 페이지에서 확인해 볼 수 있다.
+
+## Travis CI 란?
+
+- Travis CI는 Github에서 진행되는 오픈소스 프로젝트를 위한 지속적인 통합(Continuous Integration) 서비스이다. 2011년에 설립되어 2012년에 급성장하였으며 Ruby언어만 지원하였지만 현재 대부분의 개발 언어를 지원하고 있다. Travis Ci를 이용하면 Github repository에 있는 프로젝트를 특정 이벤트에 따라 테스트, 빌드, 배포를 할 수 있다.
+
+### Travis CI의 흐름
+
+로컬 Git → Github → Travis CI → AWS
+
+## Travis CI 이용 순서
+
+- 깃헙과 Travis CI 연결
+- .travis.yml : master branch로 푸시하면 그 후에 테스트를 하고 배포를 할지를 정해주는 파일
+
+# AWS 알아보기
+
+## EC2란 무엇인가? (Elastic Compute Cloud)
+
+Amazon Elastic Compute Cloud 는 AWS 클라우드에서 확장식 컴퓨팅을 제공합니다. 이를 사용하면 하드웨어에 선 투자할 필요가 없어 더 빠르게 애플리케이션을 개발하고 배포할 수 있습니다. 이를 통해 원하는 만큼 가상 서버를 구축하고 보안 및 네트워크 구성과 스토리지 관리가 가능합니다. 이는 요구 사항이나 갑작스러운 인기 증대 등 변동 사항에 따라 신속하게 규모를 확장하거나 축소할 수 있어 서버 트래픽 예측 필요성이 줄어듭니다.
+
+⇒ 한대의 컴퓨터를 임대한다고 생각하면 됩니다. 
+
+## EB란 무엇인가? (Elastic BeanStalk)
+
+AWS Elastic Beanstalk는 Apache, Nginx 같은 친숙한 서버에서 Java, NET, PHP, Node.js, Python, Ruby, Go 및 Docker와 함께 개발된 웹 응용 프로그램 및 서비스를 배포하고 확장하기 쉬운 서비스입니다. Elastic Beanstalk은 EC2 인스턴스나 데이터베이스 같이 많은 것들을 포함한 환경을 구성하며 만들고 있는 소프트웨어를 업데이트를 업데이트 할때마다 자동으로 이 환경을 관리해줍니다.
+
 
 # Reference
 

@@ -146,6 +146,8 @@ Amazon Elastic Compute Cloud 는 AWS 클라우드에서 확장식 컴퓨팅을 �
 
 AWS Elastic Beanstalk는 Apache, Nginx 같은 친숙한 서버에서 Java, NET, PHP, Node.js, Python, Ruby, Go 및 Docker와 함께 개발된 웹 응용 프로그램 및 서비스를 배포하고 확장하기 쉬운 서비스입니다. Elastic Beanstalk은 EC2 인스턴스나 데이터베이스 같이 많은 것들을 포함한 환경을 구성하며 만들고 있는 소프트웨어를 업데이트를 업데이트 할때마다 자동으로 이 환경을 관리해줍니다.
 
+# Elastic Beanstalk 환경 구성하기
+![image](https://user-images.githubusercontent.com/29927233/125149895-bb517380-e176-11eb-8550-9e72c1f37af6.png)
 
 # Reference
 

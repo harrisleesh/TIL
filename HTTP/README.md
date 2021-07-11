@@ -11,3 +11,4 @@
 [HTTPbasic]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPbasic.md
 [HTTPmethod]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPmethod.md
 [HTTPmethoduse]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPmethoduse.md
+[HTTPstatuscode]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPstatuscode.md

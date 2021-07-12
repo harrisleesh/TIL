@@ -121,3 +121,100 @@ Accept-Language: ko-KR, ko;q=0.9,en-US;q=0.8,en;q=0.7
 
 - 구체적인 것이 우선한다
 - Accept: text/*, text/plain, text/plain;format=flowed, */*
+# 전송 방식
+
+## 전송 방식 설명
+
+- 단순 전송
+- 압축 전송
+- 분할 전송
+- 범위 전송
+
+## 단순 전송
+
+### Content-Length
+
+- 길이 만큼 한 번에 전송하는 것
+
+## 압축 전송
+
+### Content-Encoding
+
+- 예) Content-Encoding:gzip
+- 압축하여 전송
+
+## 분할 전송
+
+### Transfer-Encoding
+
+- 예) Transfer-Encoding: chunked
+    - 5
+    - Hello
+    - 5
+    - World
+    - 0
+    - /r/n
+- **분할 전송시 Content-Length를 보내면 안됨!!**
+
+## 범위 전송
+
+### Range, Content-Range
+
+```jsx
+GET / event
+Range: bytes=1001-2000
+
+//Response
+Content-Range=1001-2000
+```
+
+# 일반 정보
+
+- From
+- Referer
+- User-Agent
+- Server
+- Date
+
+## From
+
+### 유저 에이전트의 이메일 정보
+
+- 일반적으로 잘 사용되지 않음
+- 검색 엔진 같은 곳에서 ,주로 사용
+- 요청에서 사용
+
+## Referer
+
+### 이전 웹 페이지 주소
+
+- 현재 요청된 페이지의 이전 웹 페이지 주소
+- A → B로 이동하는 경우 B를 요청할 때 Referer: A를 포함해서 요청
+- Referer를 사용해서 유입 경로 분석 가능
+- 요청에서 사용
+- 참고: Referer는 단어 referrer의 오타
+
+## User-Agent
+
+### 유저 에이전트 애플리케이션 정보
+
+- user-agent: Mozilla/5.0
+- 클라이언트의 애플리케이션 정보(웹 브라우저 정보, 등등)
+- 통계 정보
+- 어떤 종류의 브라우저에서 장애가 발생하는지 파악 가능
+- 요청에서 사용
+
+## Server
+
+### 요청을 처리하는 ORIGIN 서버의 소프트웨어 정보
+
+- Server: Apache/2.2.22(Debian)
+- server: nginx
+- 응답에서 사용
+
+## Date
+
+### 메시지가 발생한 날짜와 시간
+
+- Date: Tue, ~~
+- 응답에서 사용

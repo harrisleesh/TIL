@@ -2,7 +2,8 @@
 ### 2. [HTTPmethod]
 ### 3. [HTTPmethoduse]
 ### 4. [HTTPstatuscode]
-### 5. [HTTPheader]
+### 5. [HTTPheader-일반]
+### 6. [HTTPheader-캐시]
 
 ## Reference
 [모든 개발자를 위한 HTTP 웹 기본지식][httpwebbasiclink]

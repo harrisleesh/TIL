@@ -13,3 +13,5 @@
 [HTTPmethod]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPmethod.md
 [HTTPmethoduse]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPmethoduse.md
 [HTTPstatuscode]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPstatuscode.md
+[HTTPheader-일반]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPheader1.md
+[HTTPheader-캐시]: https://github.com/harrisleesh/TIL/blob/master/HTTP/HTTPheader2.md

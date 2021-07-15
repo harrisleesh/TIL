@@ -218,3 +218,147 @@ Content-Range=1001-2000
 
 - Date: Tue, ~~
 - 응답에서 사용
+# 특별한 정보
+
+## Host
+
+### 요청한 호스트 정보(도메인)
+
+- 요청에서 사용
+- 필수
+- 하나의 서버가 여러 도메인을 처리해야 할 때
+- 하나의 IP 주소에 여러 도메인이 적용되어 있을 때
+
+```jsx
+GET /hello HTTP/1.1
+Host: aaa.com
+```
+
+## Location
+
+### 페이지 리다이렉션
+
+- 웹 브라우저는 3xx 응답의 결과에 Location 헤더가 있으면, Location 위치로 자동 이동(리다이렉트)
+- 응답코드 3xx 에서 설명
+- 201 (Created): Location 값은 요청에 의해 생성된 리소스 URI
+- 3xx (Redirection): Location 같은 요청을 자동으로 리다이렉션하기 위한 대상 리소스를 가리킴
+
+## Allow
+
+### 허용 가능한 HTTP 메서드
+
+- 405(Method Not Allowed) 에서 응답에 포함해야함
+- Allow:GET, HEAD, PUT
+
+## Retry-After
+
+### 유저 에이전트가 다음 요청을 하기까지 기다려야 하는 시간
+
+- 503 (Service Unavailable)
+
+# 인증
+
+- Authorization: 클라이언트 인증 정보를 서버에 전달
+- WWW-Authenticate: 리소스 접근시 필요한 인증 방법 정의
+
+## Authorization
+
+### 클라이언트 인증 정보를 서버에 전달
+
+- Authorization: Basic xxxxxxxxxxx
+
+## WWW-Authentizate
+
+### 리소스 접근시 필요한 인증 방법 정의
+
+- 리소스 접근시 필요한 인증 방법 정의
+- 401 Unauthorized 응답과 함께 사용
+
+# 쿠키
+
+- Set-Cookie: 서버에서 클라이언트로 쿠키 전달(응답)
+- Cookie: 클라이언트가 서버에서 받은 쿠키를 저장하고, HTTP 요청시 서버로 전달
+
+## 쿠키 미사용
+
+- 모든 요청에 로그인 정보를 넘기도록 해야함
+
+## 쿠키
+
+### 로그인
+
+```jsx
+POST /login HTTP/1.1
+user=홍길동
+
+//response
+HTTP/1.1 200 OK
+Set-Cookie: user=홍길동
+//해당 응답을 받으면 웹 브라우저의 쿠키 저장소에 user=홍길동 이라고 저장
+
+GET /welcome HTTP/1.1
+Cookie: user=홍길동 //쿠키 저장소에서 조회
+```
+
+- 로그인 시 서버에서 응답으로 Set-Cookie 헤더 세팅
+- 브라우저는 쿠키 저장소에 쿠키 저장
+- 향후 모든 요청에 쿠키 정보 자동포함
+- 예) Set-Cookie: sessionId=abcde1234; expires=Sat, 26-Dec-2020 00:00:00 GMT; path=/; domain=google.com; Secure
+- 사용처
+    - 사용자 로그인 세션 관리
+    - 광고 정보 트래킹
+- 쿠키 정보는 항상 서버에 전송됨
+    - 네트워크 트래픽 추가 유발
+    - 최소한의 정보만 사용(세션 id, 인증 토큰)
+    - 서버에 전송하지 않고, 웹 브라우저 내부에 데이터를 저장하고 싶으면 웹 스토리지 참고
+- 주의
+    - 보안에 민감한 데이터는 저장하면 안됨(주민번호, 신용카드 번호 등등)
+
+## 쿠키 - 생명주기
+
+### Expires, max-age
+
+- Set-Cookie: expires=Sat, 26-Dec-2020 04:39:21 GMT
+    - 만료일이 되면 쿠키 삭제
+- Set-Cookie: max-age=3600 (3600초)
+    - 0이나 음수를 지정하면 쿠키 삭제
+- 세션 쿠키: 만료 날짜를 생략하면 브라우저 종료시
+- 영속 쿠키: 만료 시간
+
+## 쿠키 - 도메인
+
+### Domain
+
+- 예) domain=example.org
+- 명시: 명시한 문서 기준 도메인 + 서브 도메인 포함
+- domain=example.org를 지정해서 쿠키 생성
+    - example.org는 물론이고
+    - dev.example.org도 쿠키 접근
+- 생략: 현재 문서 기준 도메인 접근
+    - 하위 도메인 x
+
+## 쿠키 - 경로
+
+### Path
+
+- 예) path=/home
+- 이 경로를 포함한 하위 경로 페이지만 쿠키 접근
+- 일반적으로 path=/ 루트로 지정
+- 예)
+    - path=/home 지정
+    - /home → 가능
+    - /home/level1 → 가능
+    - /home/level1/level2 → 가능
+    - /hello → 불가능
+
+## 쿠키 보안
+
+### secure, HttpOnly, SameSite
+
+- Secure
+    - 쿠키는 http, https를 구분하지 않고 전송
+    - Secure를 적용하면 https인 경우에만 전송
+- HttpOnly
+    - Http 전송에만 사용
+- SameSite
+    - XSRF 공격 방지

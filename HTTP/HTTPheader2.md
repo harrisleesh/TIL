@@ -75,3 +75,22 @@ cache-control: max-age=60
 ...
 //star.jpg
 ```
+
+### 두 번째 요청
+
+```jsx
+GET /star.jpg
+**if-modified-since: 2020년 11월 10일 10:00:00**
+
+//서버에서 데이터가 수정되지 않았다면?
+**HTTP/1.1 304 Not Modified**
+Content-Type: image/jpeg
+cache-control: max-age=60
+Last-Modified: 2020년 11월 10일 10:00:00
+```
+
+- 캐시 유효 시간이 초과해도, 서버의 데이터가 갱신되지 않으면
+- 304 Not Modified + 헤더 메타 정보만 응답(바디 x)
+- 클라이언트는 서버가 보낸 응답 헤더 정보로 캐시의 메타 정보를 갱신
+- 클라이언트는  캐시에 저장되어 있는 데이터 재활용
+- 결과적으로 네트워크 다운로드가 발생하지만 용량이 적은 헤더로 송신가능

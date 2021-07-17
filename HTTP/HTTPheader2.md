@@ -172,3 +172,18 @@ ETag: "aaaa"
 - 조건부 요청 헤더
     - If-None-Match
     - If-Modified-Since
+# 캐시 무효화
+
+## Cache-Control
+
+### 확실한 캐시 무효화 응답 (아래의 헤더 모두 포함)
+
+- Cache-Control: no-cache, no-store, must-revalidate
+- Pragma: no-cache
+    - HTTP 1.0 하위 호환
+
+### Cache-Control: must-revalidate
+
+- 캐시 만료후 최초 조회시 원 서버에 검증해야 함
+- 원 서버에 접근할 수 없는 경우, 항상 오류가 발생해야 함
+504 Gateway Timeout

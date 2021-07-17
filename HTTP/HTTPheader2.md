@@ -143,3 +143,32 @@ ETag: "aaaa"
 - 진짜 단순하게 ETag만 서버에 보내서 같으면 유지, 다르면 다시 받기
 - 캐시 제어 로직을 서버에서 완전히 관리
 - 클라이언트는 단순히 이 값을 서버에 제공(클라이언트는 캐시 메커니즘을 모름)
+# 캐시와 조건부 요청 헤더
+
+## Cache-Control
+
+### 캐시 지시어(directives)
+
+- Cache-Control: max-age
+    - 캐시 유효 시간, 초 단위
+- Cache-Control: no-cache
+    - 데이터는 캐시해도 되지만, 항상 원 서버에 검증하고 사용
+- Cache-Control: no-store
+    - 데이터에 민감한 정보가 있으므로 저장하면 안됨
+    (메모리에서 사용하고 최대한 빨리 삭제)
+
+## Expires
+
+### 캐시 만료일 지정(하위 호환)
+
+- expires: Mon, 01 Jan 1990 00:00:00
+- 캐시 만료일을 정확한 날짜로 지정
+- max-age가 우선
+
+## 검증 헤더와 조건부 요청 헤더
+
+- 검증 헤더(Validator)
+    - Etag, Last-modified
+- 조건부 요청 헤더
+    - If-None-Match
+    - If-Modified-Since

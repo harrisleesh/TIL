@@ -3,17 +3,15 @@
 ## 도커를 쓰는 이유
 
 -   기존에 어떤 프로그램을 설치한다고 생각해보자
+![image](https://user-images.githubusercontent.com/29927233/126058098-166dab4e-1d43-4127-a406-69d1c12ab9a1.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f8ad05c-0e50-4d2c-89bc-db672ee86120/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f8ad05c-0e50-4d2c-89bc-db672ee86120/Untitled.png)
 
 설치하는 OS나 환경에 종속될 수 밖에 없다.
 
 각 클라이언트마다 환경이 다르기 때문에 설치하는데 에러가 발생할 수 있다.
 
 -   도커로 프로그램을 설치하는 상황을 보자
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d377ae46-d1c5-4752-8b5d-d353c79e8709/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d377ae46-d1c5-4752-8b5d-d353c79e8709/Untitled.png)
-
+![image](https://user-images.githubusercontent.com/29927233/126058102-7c8ef61b-818d-41e2-a4f8-0dc92e1450f3.png)
 -   도커를 이용하면 가상화기술을 통해 클라이언트 환경에 종속되지 않고 컨테이너라는 환경에서 프로그램을 설치 및 실행할 수 있다.
 
 ## 도커란 무엇인가?
@@ -21,14 +19,11 @@
 도커(Docker)는 리눅스의 응용 프로그램들을 프로세스 격리 기술들을 사용해 컨테이너로 실행하고 관리하는 오픈 소스 프로젝트이다.
 
 ## 도커이미지와 도커 컨테이너 정의
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2d9e567-e249-404b-84e0-eb51ebc68ad2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b2d9e567-e249-404b-84e0-eb51ebc68ad2/Untitled.png)
+![image](https://user-images.githubusercontent.com/29927233/126058106-378d974c-b80e-4c10-8dd1-efd6679d9836.png)
 
 ## 도커를 사용할 때의 흐름
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b0f5905c-5c7e-4e91-be89-c9689005fabd/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b0f5905c-5c7e-4e91-be89-c9689005fabd/Untitled.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9746cf9d-1c3e-4280-b0b7-218e2c4001fd/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9746cf9d-1c3e-4280-b0b7-218e2c4001fd/Untitled.png)
+![image](https://user-images.githubusercontent.com/29927233/126058110-3f4442a2-8b40-49b2-bdfa-3119346d4a36.png)
+![image](https://user-images.githubusercontent.com/29927233/126058115-f8a223f0-7717-47f9-8fda-f48bf6ea08f1.png)
 
 ## 도커와 기존의 가상화 기술의 차이를 통한 도커 컨테이너의 이해
 
@@ -75,24 +70,18 @@
 
 -   도커 이미지는 여러개의 이미지 레이어로 구성된다.
 -   베이스 이미지는 이미지의 기반이 되는 이미지이다.(Os라고 생각하면 될듯)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b0d3e62-1d7e-451e-9e77-47bc522b5730/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b0d3e62-1d7e-451e-9e77-47bc522b5730/Untitled.png)
+![image](https://user-images.githubusercontent.com/29927233/126058045-69caec78-d347-4a91-82de-ded0bb53ef0f.png)
 
 ### 도커파일로 도커 이미지 만들기
 
 -   베이스 이미지에서 다른 종속성이나 새로운 커맨드를 추가할 때는 임시 컨테이너를 만든 후 그 컨테이너를 기반으로 새로운 이미지를 만든다. 그리고 그 임시 컨테이너를 지운다.
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d209210e-701b-4fb1-8e5d-a9a30a321087/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d209210e-701b-4fb1-8e5d-a9a30a321087/Untitled.png)
-
+![image](https://user-images.githubusercontent.com/29927233/126058052-54269b13-ae5d-4c65-b9f9-3ebb62b18eea.png)
 ## 도커 파일로 도커 이미지 만들기
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cf77ecc9-b33d-4e43-9b37-d114a22b20a8/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cf77ecc9-b33d-4e43-9b37-d114a22b20a8/Untitled.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/548d3e11-5420-4381-8708-9e8c858acbb2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/548d3e11-5420-4381-8708-9e8c858acbb2/Untitled.png)
+![image](https://user-images.githubusercontent.com/29927233/126058068-50863b89-1db7-4a6d-a0eb-f86c95e30e30.png)
+![image](https://user-images.githubusercontent.com/29927233/126058074-05a4b205-7e12-4753-bed9-1a280685f22c.png)
 
 ## 내가 만든 이미지 기억하기 쉬운 이름 주기
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/706dc443-b289-4a45-856c-7e3c0be7967e/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/706dc443-b289-4a45-856c-7e3c0be7967e/Untitled.png)
+![image](https://user-images.githubusercontent.com/29927233/126058081-162e91fe-e1f8-4206-8e18-44f71ecd1ede.png)
 
 # 도커를 이용한 간단한 Node.js 어플 만들기
 

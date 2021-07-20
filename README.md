@@ -18,6 +18,7 @@
 - DB Sharding
 ## DataStructure
 ## Java
+- Functional Interfacce
 ## Network
 ## OS
 ## Spring

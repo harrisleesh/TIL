@@ -19,6 +19,7 @@
 ## DataStructure
 ## Java
 - Functional Interfacce
+- Enum
 ## Network
 ## OS
 ## Spring

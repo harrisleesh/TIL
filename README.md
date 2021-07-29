@@ -24,6 +24,7 @@
 ## OS
 ## Spring
 - Spring mvc
+- Spring Batch
 - Spring Security
 - Spring data jpa
 - QueryDSL

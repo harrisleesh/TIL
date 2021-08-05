@@ -20,6 +20,8 @@
 ## Java
 - Functional Interfacce
 - Enum
+## JavaScript
+- core concept
 ## Network
 ## OS
 ## React

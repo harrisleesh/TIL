@@ -5,11 +5,11 @@
 - 나만의 언어를 사용하여 정리하려고 노력합니다.
 - 다시 시작, since 20210516
 
-## Docker
-
 ## Algorithm
 - sort
 - hash
+## Architecture
+- MSA
 ## AWS
 ## CI/CD
 - Travis CI
@@ -17,6 +17,7 @@
 ## DataBase
 - DB Sharding
 ## DataStructure
+## Docker
 ## Java
 - Functional Interfacce
 - Enum

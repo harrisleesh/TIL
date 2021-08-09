@@ -2,7 +2,7 @@ javascript study
 
 1. [jsflow]
 2. [평가와 일급]
-
+3. [ES6에서의 순회와 이터러블:이터레이터 프로토콜]
 
 
 [jsflow]: https://github.com/harrisleesh/TIL/blob/master/javascript/js-flow.md

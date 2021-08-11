@@ -23,6 +23,10 @@
 - Enum
 ## JavaScript
 - core concept
+- closure
+- callback
+- promise
+- async/await
 ## Network
 ## OS
 ## React

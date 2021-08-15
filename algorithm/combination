@@ -1,0 +1,29 @@
+public void comb(int[][]needs, int length, boolean[] visited, int start, int r) {
+            if(r == 0) {
+                cal(needs, length, visited);
+                return;
+            } else {
+                for(int i = start; i < length; i++) {
+                    visited[i] = true;
+                    comb(needs, length, visited, i + 1, r - 1);
+                    visited[i] = false;
+                }
+            }
+        }
+        public void cal(int[][] needs, int length, boolean[] visited) {
+            Set<Integer> ints = new HashSet<>();
+            for (int i = 0; i < length; i++) {
+                if (visited[i] == false) {
+                    System.out.print(i + " ");
+                    ints.add(i);
+                }
+            }
+            int match = 0;
+            for(int[] need : needs) {
+                if(ints.stream().allMatch(i -> need[i] == 0)){
+                    match++;
+                }
+            }
+            max = Math.max(match, max);
+            System.out.println();
+        }

@@ -55,7 +55,52 @@ const log = console.log;
     for (const a of map.values()) log(a);
     for (const a of map.entries()) log(a);
 ```
-
 # 사용자 정의 이터러블, 이터러블/이터레이터 프로토콜 정의
 
+## Well-Formed Iterator
+
+- iterator[Symbol.iterator]() 를 호출했을 때 자기자신이 되어야한다.
+- iterator.next()를 한 후에 for..of 문을 수행하면 next가 된 시점이 유지되고 이후 값들만을 순회한다.
+
+```jsx
+const iterable = {
+    [Symbol.iterator]() {
+        let i = 3;
+        return {
+            next() {
+                return i === 0 ? {done: true} : {value: i--, done: false};
+            },
+            [Symbol.iterator]() { return this;}
+        }
+    }
+};
+
+let iterator = iterable[Symbol.iterator]();
+log(iterator.next());
+for (const iteratorElement of iterator) {
+    log(iteratorElement);
+}
+
+// well formed Iterator?
+const arr = [1, 2, 3];
+let iter = arr[Symbol.iterator]();
+iter.next();
+log(iter[Symbol.iterator]() === iter);
+for (const number of iter) {
+    log(number);
+}
+```
+
 # 전개 연산자
+
+- ...a
+- 전개연산자도 이터러블 이터레이터 프로토콜을 따르는 값을 펼친다.
+
+```jsx
+// 전개 연산자
+console.clear();
+const a = [1, 2];
+// a[Symbol.iterator] = null;
+log([...a, ...[3,4]]);
+log([a, [3,4]]);
+```

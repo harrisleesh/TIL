@@ -21,6 +21,7 @@
 ## Java
 - Functional Interfacce
 - Enum
+- Optional
 ## JavaScript
 - core concept
 - closure

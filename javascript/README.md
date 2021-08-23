@@ -7,6 +7,7 @@
 5. [Map Filter Reduce]
 6. [코드를 값으로 다루어 표현하기]
 
+모나드
 
 [jsflow]: https://github.com/harrisleesh/TIL/blob/master/javascript/js-flow.md
 [평가와 일급]: https://github.com/harrisleesh/TIL/blob/master/javascript/%ED%8F%89%EA%B0%80%EC%99%80%20%EC%9D%BC%EA%B8%89.md

@@ -16,6 +16,7 @@
 - Github Actions
 ## DataBase
 - DB Sharding
+- Entity 설계
 ## DataStructure
 ## Docker
 ## Java
@@ -28,6 +29,8 @@
 - callback
 - promise
 - async/await
+## Monitoring
+- ontune
 ## Network
 ## OS
 ## React

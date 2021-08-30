@@ -23,6 +23,8 @@
 - Functional Interfacce
 - Enum
 - Optional
+- Stream
+- Lambda
 ## JavaScript
 - core concept
 - closure

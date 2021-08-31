@@ -40,3 +40,5 @@ return React.createElement('div', {className: 'shopping-list'},
 - Each React component is encapsulated and can operate independently;
 - this allows you to build complex UIs from simple componenets.
 
+## Rendering Elements
+Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.

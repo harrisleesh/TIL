@@ -26,6 +26,11 @@
 - 운영 장비에는 절대 create, create-drop, update 사용하면 안된다.
 
 # 필드와 컬럼 매핑
+![image](https://user-images.githubusercontent.com/29927233/132937233-4d330fa8-e306-4aa5-8f15-789d245b5a42.png)
+![image](https://user-images.githubusercontent.com/29927233/132937235-31147702-feec-432f-adb7-8987cc8d32a3.png)
+![image](https://user-images.githubusercontent.com/29927233/132937251-0832f7cd-b24e-44b8-879d-86f164b85d6c.png)
+![image](https://user-images.githubusercontent.com/29927233/132937254-1b2209de-42f1-4521-9772-c14a697ba055.png)
+![image](https://user-images.githubusercontent.com/29927233/132937260-284e2bce-c6e5-40b3-8b3b-7d4b82074715.png)
 
 
 # 기본 키 매핑
@@ -40,6 +45,7 @@
 
 ### @TableGenerator 필요**AUTO**: 방언에 따라 자동 지정, 기본값
 
+![image](https://user-images.githubusercontent.com/29927233/132937297-d47941a9-522b-4713-aa63-d4fd9926d647.png)
 
 ## 권장하는 식별자 전략
 

@@ -3,5 +3,8 @@
 - persistence-context
 - entity-mapping
 - proxy
+- eager-lazy-load
+
+
 
 # 일급 컬렉션, mbedded & embeddable

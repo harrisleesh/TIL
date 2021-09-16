@@ -37,4 +37,5 @@ team.getName(); //실제 Team을 조회하는 시점에 초기화(DB 조회)
 
 ![image](https://user-images.githubusercontent.com/29927233/133105726-8b7e9f06-b7b9-4111-9d2a-2631bfaadc49.png)
 
+## N+1 문제
 

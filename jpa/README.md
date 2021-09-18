@@ -4,6 +4,7 @@
 - entity-mapping
 - proxy
 - eager-lazy-load
+- inheritance-relation-mapping
 
 
 

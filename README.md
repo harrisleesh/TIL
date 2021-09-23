@@ -8,6 +8,7 @@
 ## Algorithm
 - sort
 - hash
+- dynamic programming
 ## Architecture
 - MSA
 ## AWS

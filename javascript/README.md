@@ -1,3 +1,8 @@
+# asyncronous
+- callback
+- Promise
+- aysnc & await
+
 # javascript study 
 
 1. [jsflow]

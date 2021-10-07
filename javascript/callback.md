@@ -59,3 +59,85 @@ console.log(numbers.sort(sortfunc)) // 내장/빌트인 객체, 내장/빌트인
 ## 비동기 처리
 
 콜백은 비동기처리에서도 유용하게  사용된다. 시간이 오래걸리는 작업이 있을 때 이 작업이 완료된 후에 처리해야 할 일을 콜백으로 지정하면 해당 작업을 실행하도록 할 수 있다.
+
+# Javascript is synchronous
+
+- 호이스팅이 된 후부터 코드가 순서대로 실행 된다.
+
+```java
+console.log('1');
+console.log('2');
+console.log('3');
+```
+
+## callback
+
+```java
+console.log('1');
+setTimeout(()=>
+    console.log('2')
+, 1000);
+console.log('3');
+```
+
+### synchronous callback & asynchronous callback
+
+```java
+//synchronous callback
+function printImmediately(print){
+    print();
+}
+printImmediately(() => console.log('hello'));
+
+//asynchronous callback
+function printWithDelay(print, timeout) {
+    setTimeout(print, timeout);
+}
+printWithDelay(() => console.log('async callback'), 2000);
+```
+
+## 콜백 지옥
+
+```java
+class UserStorage{
+    loginUser(id, password, onSuccess, onError){
+        setTimeout(()=>{
+            if(
+                (id === 'harris' && password === 'lee') ||
+                (id === 'haerin' && password === 'park')
+            ){
+                onSuccess(id);
+            } else {
+                onError(new Error('not found'));
+            }
+        }, 2000)
+    }
+
+    getRoles(user, onSuccess, onError){
+        if(user === 'harris'){
+            onSuccess({ name: 'harris', role: 'admin'})
+        }
+        else{
+            onError(new Error('no access'));
+        }
+    }
+}
+
+const userStorage = new UserStorage();
+const id = prompt('enter your id');
+const password = prompt('enter your password');
+userStorage.loginUser(
+    id,
+    password,
+    user => (
+        userStorage.getRoles(
+            user,
+            userWithRole => {
+                alert(`Hello ${userWithRole.name}, you have a ${userWithRole.role} role`);
+            },
+            error => console.log(error)
+        )
+    ),
+    error => console.log(error)
+);
+```

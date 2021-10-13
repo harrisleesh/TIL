@@ -45,6 +45,7 @@
 - Spring Security
 - Spring data jpa
 - QueryDSL
+- Spring Cloud
 ## TOBY'S SPRING
 Ch6 AOP
 ## Web

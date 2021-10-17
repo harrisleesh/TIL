@@ -67,6 +67,31 @@ MSA
 8. CI/CD
 9. Visibility
 
-# MicroService와 Service oriented Architecture
+# Micro Service Architecture와 Service Oriented Architecture
+
+SOA - 재사용을 통한 비용 절감
+
+MSA - 결합도를 낮추어 변화에 능동적으로 대응
+
+## Service Mesh
+
+- 서비스간의 통신을 자동화
+- MSA 인프라 → 미들웨어
+    - 프록시 역할 , 인증, 권한 부여, 서비스 검색, 요청 라우팅, 로드 밸런싱
+    - 자가 치유 복구 서비스
 
 # Spring cloud
+
+- Centralized configuration management
+    - Spring Cloud Config Server
+- Location transparency
+    - naming server (eureka)
+- Load Distribution(Load balancing)
+    - Ribbon(Client Side)
+    - Spring Cloud Gateway
+- Easier REST Clients
+    - FeignClient
+- Visibility and monitoring
+    - Zipkin Distributed Tracing
+    - Netflix API gateway
+- Fault Tolerance

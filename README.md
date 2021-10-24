@@ -48,6 +48,7 @@
 - Spring Cloud
 ## TOBY'S SPRING
 Ch6 AOP
+## TypeScript
 ## Web
 - HTTP vs HTTPS
 - Nginx

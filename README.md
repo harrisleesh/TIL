@@ -42,7 +42,7 @@
 ## Spring
 - Spring mvc
 - Spring Batch
-- Spring Security
+- Spring Security, oauth
 - Spring data jpa
 - QueryDSL
 - Spring Cloud

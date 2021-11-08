@@ -33,6 +33,7 @@
 - promise
 - async/await
 ## JPA
+- N+1
 ## Monitoring
 - ontune
 ## Network

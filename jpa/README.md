@@ -8,4 +8,4 @@
 - cascade
 
 
-# 일급 컬렉션, mbedded & embeddable
+# 일급 컬렉션, embedded & embeddable

@@ -5,7 +5,7 @@
 - proxy
 - eager-lazy-load
 - inheritance-relation-mapping
-
+- cascade
 
 
 # 일급 컬렉션, mbedded & embeddable

@@ -33,3 +33,31 @@
 - int, double 같은 기본 타입은 절대 공유 x
 - 기본 타입은 항상 값을 복사함
 - Integer같은 래퍼 클래스나 String 같은 특수한 클래스는 공유가능한 객체이지만 변경 X
+# 임베디드 타입
+
+- 새로운 값 타입을 직접 정의할 수 있음
+- JPA는 임베디드 타입(embedded type)이라 함
+- 주로 기본 값 타입을 모아서 만들어서 복합 값 타입이라고도 함
+- int, String과 같은 값 타입
+- @Embeddable, @Embedded
+
+## 예제
+
+- 회원 엔티티는 이름, 근무 시작일, 근무 종료일, 주소 도시, 주소 번지, 주소 우편번호를 가진다
+![image](https://user-images.githubusercontent.com/29927233/141127670-d97822bf-1cf6-43e3-b2e6-04eb1c3900b2.png)
+
+- 회원 엔티티는 이름, 근무 기간, 집 주소를 가진다.
+![image](https://user-images.githubusercontent.com/29927233/141127697-6f0e5f8d-574d-4e0e-929d-00ccac688e4c.png)
+
+## 임베디드 타입과 테이블 매핑
+
+- 임베디드 타입은 엔티티의 값일 뿐이다.
+- 임베디드 타입을 사용하기 전과 후에 매핑하는 테이블은 같다.
+- 객체와 테이블을 아주 세밀하게 매핑하는 것이 가능
+- 잘 설계한 ORM 애플리케이션은 매핑한 테이블 수보다 클래스의 수가 더 많음
+
+## @AttributeOverride: 속성 재정의
+
+- 한 엔티티에서 같은 값 타입을 사용하려면?
+- 컬럼명이 중복됨
+- @AttributeOverrides, @AttributeOverride를 사용해서 컬럼 명 속성을 재정의

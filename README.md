@@ -25,7 +25,7 @@
 - Enum
 - Optional
 - Stream
-- Lambda
+- Lambda2
 ## JavaScript
 - core concept
 - closure

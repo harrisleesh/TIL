@@ -34,6 +34,8 @@
 - async/await
 ## JPA
 - N+1
+## Kotlin
+- FP
 ## Monitoring
 - ontune
 ## Network
